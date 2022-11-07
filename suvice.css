@@ -1,0 +1,467 @@
+
+.inner {
+    max-width: 1000px;
+    width: 90%;
+    margin: 0 auto;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+.hd-area {
+    background-color: white;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0px 40px;
+    position: absolute;
+    top: 0;
+    width: 100vw;
+    z-index: 100;
+}
+
+.hd-area.fix {
+    position: fixed;
+    top: 0;
+    animation-name: upAnime;
+    animation-duration: 0.8s;
+    animation-fill-mode: forwards;
+}
+
+@keyframes upAnime {
+    from {
+        opacity: 0;
+        transform: translateY(-100%);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.hd-logo {
+    width: 56px;
+    margin: 8px 0 4px;
+}
+
+.hd-logo img {
+    width: 100%;
+}
+
+.hd-list {
+    display: flex;
+    gap: 2.5vw;
+}
+
+.hd-list li{
+    height: 36px;
+    overflow: hidden;
+    padding: 0px 0;
+    text-align: center;
+    font-size: 0.8rem;
+    font-family: 'Fredoka One', cursive;
+}
+
+.hd-list a{
+    padding: 10px 0;
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+    transition: 0.5s;
+}
+
+.hd-list a:hover {
+    transform: translateY(-55%);
+}
+
+.list-ja {
+    font-family: fantasy;
+    font-weight: 600;
+    position: relative;
+}
+
+.list-ja::after {
+    content: "";
+    position: absolute;
+    bottom: -2px;
+    left: 50%;
+    transform: translateX(-50%);
+    height: 1px;
+    width: 2px;
+}
+
+.hd-list li:hover .list-ja::after {
+    content: "";
+    position: absolute;
+    bottom: -2px;
+    left: 50%;
+    transform: translateX(-50%);
+    height: 1px;
+    width: 0px;
+    background-color: black;
+    animation-name: underLine;
+    animation-duration: 1s;
+    animation-delay: 0.4s;
+    animation-fill-mode: forwards;
+}
+
+@keyframes underLine {
+    from {
+        width: 0;
+    }
+
+    to {
+        width: 90%;
+    }
+}
+/* ↑ header */
+
+.hamburger {
+    display: none;
+}
+
+
+.top-button {
+    position: fixed;
+    bottom: 16px;
+    right: 16px;
+    z-index: 10;
+    display: none;
+}
+
+.top-button.up {
+    animation-name: topIn;
+    animation-duration: 1s;
+    animation-fill-mode: forwards;
+    display: block;
+}
+
+@keyframes topIn {
+    from {
+        opacity: 0;
+        transform: translateY(-100%);
+    }
+
+    to {
+        display: block;
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.top-button.down {
+    animation-name: topDown;
+    animation-duration: 0.5s;
+    animation-fill-mode: forwards;
+    display: block;
+}
+
+@keyframes topDown {
+    from {
+        display: block;
+        opacity: 1;
+        transform: translateY(0);
+    }
+
+    to {
+        opacity: 0;
+        transform: translateY(-50%);
+    }
+}
+
+.top-button svg {
+    width: 32px;
+    height: 32px;
+    color: rgb(89, 89, 89);
+}
+
+.top-wrapper {
+    margin-top: 84px;
+    width: 100vw;
+    background: linear-gradient(82deg,rgba(21,150,143, 0.4) 0%,rgba(104,93,250, 0.4) 15.3%,rgba(104,93,250, 0.4) 26.6%,rgba(104,93,250, 0.4) 50%,rgba(255,62,144, 0.4) 100%);
+}
+
+.top-title {
+    max-width: 1000px;
+    margin: 0 auto;
+    text-align: center;
+    padding: 100px;
+}
+
+.top-title h2 {
+    font-size: 1.65rem;
+    font-family: 'Fredoka One', cursive;
+    letter-spacing: 0.15rem;
+    padding-bottom: 8px;
+}
+
+.top-title p {
+    font-weight: 600;
+    font-size: 0.8rem;
+    display: flex;
+    justify-content: center;
+}
+
+.top-title span {
+    padding: 0px 8px;
+}
+
+.top-title span:first-child{
+    border-right: 3px solid black;
+    display: block;
+    text-decoration: underline;
+}
+
+.top-title a {
+    display: block;
+}
+
+.iot-area {
+    padding-bottom: 80px;
+}
+
+.maintitle {
+    display: flex;
+    align-items: center;
+    letter-spacing: 0.15em;
+}
+
+.subtitle {
+    font-family: serif;
+    margin-top: 4px;
+    font-weight: 600;
+}
+
+.maintitle img {
+    width: 1.5rem;
+}
+
+.maintitle h2{
+    font-size: 1.5rem;
+    padding-left: 0.5rem;
+    font-family: 'Fredoka One', cursive;
+}
+
+.mb-title {
+    padding-top: 40px;
+}
+
+.list {
+    padding-left: 20vw;
+    padding-top: 40px;
+    /* font-family: "Noto Sans JP", sans-serif; */
+}
+
+.list li {
+    padding-top: 40px;
+}
+
+.list h3 {
+    font-weight: 900;
+    font-size: 1.2rem;
+    padding-left: 20px;
+    position: relative;
+}
+
+.list h3::before {
+    content: "";
+    position: absolute;
+    top: 50%;
+    left: 0px;
+    transform: translateY(-60%);
+    /* background: rgb(88,88,88); */
+    background: linear-gradient(135deg, rgb(74, 74, 74) 0%, rgb(188, 188, 188) 100%);
+    width: 16px;
+    height: 16px;
+    border-radius: 50%;
+}
+
+.list p{
+    font-size: 0.8rem;
+    font-family: "Noto Sans JP", sans-serif;
+    line-height: 1.5rem;
+    letter-spacing: 0.05rem;
+    padding-top: 16px;
+}
+
+.iot-title {
+    padding-top: 100px;
+    /* padding-bottom: 40px; */
+}
+
+/* footer */
+footer {
+    border-top: 1px solid gray;
+    background-color: rgb(255, 255, 255);
+}
+
+.ft-list {
+    display: flex;
+    width: 80%;
+    margin: 0 auto;
+    justify-content: center;
+    margin-top: 24px;
+    margin-bottom: 40px;
+    font-family: 'Fredoka One', cursive;
+    font-size: 0.8rem;
+    align-items: center;
+}
+
+.ft-list a {
+    font-weight: lighter;
+    color: #5b5b5b;
+}
+
+.ft-list a:hover {
+    color: black;
+    transition: all 0.3s;
+}
+
+.ft-list li {
+    padding: 4px 16px;
+    border-right: 1px solid gray;
+}
+
+.ft-list li:first-child {
+    border-left: 1px solid gray;
+}
+
+.copy-right {
+    padding-bottom: 24px;
+    text-align: center;
+    font-size: 0.8rem;
+    color: #2a2a2a;
+}
+
+/* ↓　マウスストーカー */
+.cursor-in {
+    border-radius: 50%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    pointer-events: none;
+}
+
+.cursor-in {
+    width: 8px;
+    height: 8px;
+    background-color: #333;
+    z-index: 5001;
+}
+
+.cursor-in.is-active {
+    transform: scale(5);
+    opacity: 0.1;
+}
+
+@media screen and (max-width : 1024px) {
+    .hd-list li {
+        font-size: 0.6rem;
+
+    }
+}
+
+@media screen and (max-width : 600px) {
+    .hd-logo {
+        width: 40px;
+    }
+
+    .hd-list {
+        display: none;
+    }
+
+    .hamburger {
+        display: block;
+        position: absolute;
+        top: 0;
+        right: 0;
+        z-index: 999;
+        border: #000 1px  solid;
+    }
+
+    .hamburger-box {
+        position: absolute;
+        top: 7px;
+        right: 16px;
+        z-index: 999;
+    }
+
+    .hamburger-menu{
+        position: relative;
+        background:#ffffff;
+        cursor: pointer;
+        width: 50px;
+        height:50px;
+    }
+
+    .hamburger-menu span{
+        display: inline-block;
+        transition: all .4s;
+        position: absolute;
+        left: 14px;
+        height: 3px;
+        border-radius: 2px;
+        background: rgb(0, 0, 0);
+        width: 45%;
+    }
+
+
+    .hamburger-menu span:nth-of-type(1) {
+        top:15px; 
+    }
+
+    .hamburger-menu span:nth-of-type(2) {
+        top:23px;
+    }
+
+    .hamburger-menu span:nth-of-type(3) {
+        top:31px;
+    }
+
+    .hamburger-menu.swich span:nth-of-type(1) ,
+    .hamburger-menu.swich span:nth-of-type(3){
+    top: 23px;
+}
+
+    .open-hd {
+        position: fixed;
+        right: -120%;
+        top: 63px;
+        width: 100vw;
+        height: 100vh;
+        transition: all 0.5s;
+        z-index: 999;
+        background-color: #ffffff;    
+    }
+
+    .open-hd.slide {
+        right: 0;
+    }
+
+    .open-list a {
+        display: block;
+        color: rgb(0, 0, 0);
+        padding: 16px;
+        padding-left: 32px;
+        font-size: 0.85rem;
+        font-family: 'Fredoka One', cursive;
+    }
+
+    .top-wrapper {
+        margin-top: 63px;
+    }
+
+    .list {
+        padding-left: 5vw;
+    }
+
+    .ft-list {
+        display: none;
+    }
+
+    .copy-right {
+        padding-top: 32px;
+    }
+}
