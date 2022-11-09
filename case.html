@@ -1,0 +1,337 @@
+<!DOCTYPE html>
+<html lang="ja">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./reset.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick-theme.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.css">
+    <link rel="stylesheet" href="./case.css">
+    <link rel="icon" href="./HatchfulExport-All/favicon3.png">
+    <title>Diz's case</title>
+    <script src="https://code.jquery.com/jquery-3.6.1.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Fredoka+One&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@300&display=swap" rel="stylesheet">
+    <!-- tweenMaxの読み込み -->
+    <script src="//cdnjs.cloudflare.com/ajax/libs/gsap/latest/TweenMax.min.js"></script>
+</head>
+
+<body>
+    <header>
+        <div class="hd-area">
+            <div class="hd-logo">
+                <a href="./index.html"><img src="./HatchfulExport-All/touka-logo3.pmg.png" alt=""></a>
+            </div>
+            <nav class="hd-nav">
+                <ul class="hd-list">
+                    <li><a href="./philosophy.html"><span>PHILOSOPHY</span><span class="list-ja">企業理念</span></a></li>
+                    <li><a href="./survice.html"><span>SURVICE</span><span class="list-ja">事業内容</span></a></li>
+                    <li><a href="./case.html"><span>CASE STUDY</span><span class="list-ja">過去事例等</span></a></li>
+                    <li><a href="./recruit.html"><span>RECRUIT</span><span class="list-ja">求人</span></a></li>
+                    <li><a href="./company.html"><span>COMPANY</span><span class="list-ja">企業情報</span></a></li>
+                    <li><a href="./contact.html"><span>CONTACT</span><span class="list-ja">お問い合わせ</span></a></li>
+                </ul>
+            </nav>
+            <div class="hamburger">
+                <div class="hamburger-box">
+                    <div class="hamburger-menu"><span></span><span></span><span></span></div>
+                </div>
+                <div class="open-hd">
+                    <ul class="open-list">
+                        <li><a href="./philosophy.html">PHILOSOPHY</a></li>
+                        <li><a href="./survice.html">SURVICE</a></li>
+                        <li><a href="./case.html">CASE STUDY</a></li>
+                        <li><a href="./recruit.html">RECRUIT</a></li>
+                        <li><a href="./company.html">COMPANY</a></li>
+                        <li><a href="./contact.html">CONTACT</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <a href="#top" class="top-button">
+            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                class="bi bi-arrow-up-circle" viewBox="0 0 16 16">
+                <path fill-rule="evenodd"
+                    d="M1 8a7 7 0 1 0 14 0A7 7 0 0 0 1 8zm15 0A8 8 0 1 1 0 8a8 8 0 0 1 16 0zm-7.5 3.5a.5.5 0 0 1-1 0V5.707L5.354 7.854a.5.5 0 1 1-.708-.708l3-3a.5.5 0 0 1 .708 0l3 3a.5.5 0 0 1-.708.708L8.5 5.707V11.5z" />
+            </svg>
+        </a>
+    </header>
+
+    <main>
+        <section class="top-wrapper">
+            <div class="top-title">
+                <h2>CASE STUDY</h2>
+                <p><span><a href="./index.html">HOME</a></span><span>CASE STUDY</span></p>
+            </div>
+        </section>
+        <div class="td-area">
+            <div class="inner">
+                <div class="td-title">
+                    <div class="maintitle">
+                        <img src="./HatchfulExport-All/favicon3.png" alt="">
+                        <h2>03.CASE STUDY</h2>
+                    </div>
+                    <div class="subtitle">
+                        <p>過去事例・コラム</p>
+                    </div>
+                </div>
+                <div class="td-content">
+                    <div class="td-slick">
+                        <div class="td-box">
+                            <img src="./images/sizing-suit.png" alt="">
+                            <div class="td-sentence">
+                                <p class="td-gray">CASE and COLUMN</p>
+                                <p class="td-black">
+                                    弊社が注目すべきスタートアップ企業30選に選ばれました。
+                                </p>
+                            </div>
+                            <div class="td-category">
+                                <p>＃FASION</p>
+                            </div>
+                        </div>
+                        <div class="td-box">
+                            <img src="./images/gray-window1.png" alt="">
+                            <div class="td-sentence">
+                                <p class="td-gray">CASE and COLUMN</p>
+                                <p class="td-black">
+                                    ファッション業界に革命をもたらす！
+                                    DXの波に乗れ！
+                                </p>
+                            </div>
+                            <div class="td-category">
+                                <p>＃FASION</p>
+                            </div>
+                        </div>
+                        <div class="td-box">
+                            <img src="./images/sizing-woman.png" alt="">
+                            <div class="td-sentence">
+                                <p class="td-gray">CASE and COLUMN</p>
+                                <p class="td-black">
+                                    ファッション業界における<br>
+                                    タブーとは？
+                                </p>
+                            </div>
+                            <div class="td-category">
+                                <p>＃FASION</p>
+                            </div>
+                        </div>
+                        <div class="td-box sp-hidden">
+                            <img src="./images/gray-window1.png" alt="">
+                            <div class="td-sentence">
+                                <p class="td-gray">CASE and COLUMN</p>
+                                <p class="td-black">
+                                    ファッション業界に革命をもたらす！
+                                    DXの波に乗れ！
+                                </p>
+                            </div>
+                            <div class="td-category">
+                                <p>＃FASION</p>
+                            </div>
+                        </div>
+                        <div class="td-box sp-hidden">
+                            <img src="./images/sizing-suit.png" alt="">
+                            <div class="td-sentence">
+                                <p class="td-gray">CASE and COLUMN</p>
+                                <p class="td-black">
+                                    弊社が注目すべきスタートアップ企業30選に選ばれました。
+                                </p>
+                            </div>
+                            <div class="td-category">
+                                <p>＃FASION</p>
+                            </div>
+                        </div>
+                        <div class="td-box sp-hidden">
+                            <img src="./images/sizing-woman.png" alt="">
+                            <div class="td-sentence">
+                                <p class="td-gray">CASE and COLUMN</p>
+                                <p class="td-black">
+                                    ファッション業界における<br>
+                                    タブーとは？
+                                </p>
+                            </div>
+                            <div class="td-category">
+                                <p>＃FASION</p>
+                            </div>
+                        </div>
+                        <div class="td-box sp-hidden">
+                            <img src="./images/sizing-woman.png" alt="">
+                            <div class="td-sentence">
+                                <p class="td-gray">CASE and COLUMN</p>
+                                <p class="td-black">
+                                    ファッション業界における<br>
+                                    タブーとは？
+                                </p>
+                            </div>
+                            <div class="td-category">
+                                <p>＃FASION</p>
+                            </div>
+                        </div>
+                        <div class="td-box sp-hidden">
+                            <img src="./images/sizing-suit.png" alt="">
+                            <div class="td-sentence">
+                                <p class="td-gray">CASE and COLUMN</p>
+                                <p class="td-black">
+                                    弊社が注目すべきスタートアップ企業30選に選ばれました。
+                                </p>
+                            </div>
+                            <div class="td-category">
+                                <p>＃FASION</p>
+                            </div>
+                        </div>
+                        <div class="td-box sp-hidden">
+                            <img src="./images/gray-window1.png" alt="">
+                            <div class="td-sentence">
+                                <p class="td-gray">CASE and COLUMN</p>
+                                <p class="td-black">
+                                    ファッション業界に革命をもたらす！
+                                    DXの波に乗れ！
+                                </p>
+                            </div>
+                            <div class="td-category">
+                                <p>＃FASION</p>
+                            </div>
+                        </div>
+                        <div class="more-box">
+                            <a class="more">更に見る</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+    <footer>
+        <div class="inner">
+            <ul class="ft-list">
+                <li><a href="./philosophy.html">PHILOSOPHY</a></li>
+                <li><a href="./survice.html">SURVICE</a></li>
+                <li><a href="./case.html">CASE STUDY</a></li>
+                <li><a href="./recruit.html">RECRUIT</a></li>
+                <li><a href="./company.html">COMPANY</a></li>
+                <li><a href="./contact.html">CONTACT</a></li>
+            </ul>
+            <div class="copy-right">
+                <p>Copyright Diz All Rights Reserved.</p>
+            </div>
+        </div>
+    </footer>
+    <div class="cursor-in"></div>
+
+    <script>
+
+        // headerのフェードイン/TOPへのボタンのフェードイン
+        $(window).scroll(function () {
+            let scroll = $(this).scrollTop();
+            let hdH = $(".hd-area").innerHeight();
+            let topEleH = $(".top-wrapper").innerHeight() - 600;
+            let halfH = $(window).innerHeight() / 2;
+
+            if (scroll >= hdH) {
+                $(".hd-area").addClass("fix");
+            } else {
+                $(".hd-area").removeClass("fix");
+            }
+
+            if (scroll >= halfH) {
+                $(".top-button").addClass("up");
+                $(".top-button").removeClass("down");
+            } else {
+                $(".top-button").removeClass("up");
+                $(".top-button").addClass("down");
+            }
+        });
+
+        // ハンバーガーメニュー
+        $(".hamburger-box").on("click", function () {
+            // メニューの記述
+            $(".open-hd").toggleClass("slide");
+            // ハンバーガーのボタン
+            $(".hamburger-menu").toggleClass("swich");
+        })
+
+        // スマホサイズの時だけslick
+        function slickSp() {
+            let winW = $(window).innerWidth();
+            // 600 = sp = スマホサイズ
+            if (winW < 600) {
+                $(".td-slick").slick({
+                    autoplay: true,
+                    autoplaySpeed: 3000,
+                    dots: true,
+                    arrows: true,
+                    pauseOnHover: true,
+                    fade: true,
+                    focusOnSelect: true,
+                })
+            } else {
+                $(".td-slick").slick("unslick");
+            }
+        }
+
+        $(window).on("load", function () {
+            slickSp();
+        });
+
+        // 画面サイズが変わる度に
+        $(window).resize(function () {
+            slickSp();
+        });
+
+
+        // マウスストーカーの記述
+        let cursorIn = $(".cursor-in");
+        let cursorW = 8;
+        let mouseX = 0;
+        let mouseY = 0;
+
+        $(document).on("mousemove", function (e) {
+            mouseX = e.pageX;
+            mouseY = e.pageY;
+        });
+
+        TweenMax.to({}, .001, {
+            repeat: -1,
+            onRepeat: function () {
+
+                TweenMax.set(cursorIn, {
+                    css: {
+                        left: mouseX - cursorW / 2,
+                        top: mouseY - cursorW / 2
+                    }
+                });
+            }
+        });
+
+        $("a").on({
+            "mouseenter": function () {
+                cursorIn.addClass("is-active");
+            },
+            "mouseleave": function () {
+                cursorIn.removeClass("is-active");
+            }
+        });
+
+        // 更に表示の記述
+        var show = 3;
+        var num = 3; 
+        var contents = '.td-box'; 
+        let winW = $(window).innerWidth();
+        if(winW >= 600){
+            $(contents + ':nth-child(n + ' + (show + 1) + ')').addClass('is-hidden');
+        }
+        $('.more').on('click', function () {
+            $(contents + '.is-hidden').slice(0, num).removeClass('is-hidden');
+            if ($(contents + '.is-hidden').length == 0) {
+                $('.more').fadeOut();
+            }
+        });
+    </script>
+</body>
+
+</html>
